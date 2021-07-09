@@ -17,21 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>LeetCode20210707 | 三水的博客</title>
-  <meta name="description" content="1">
+  <title>LeetCode20210709 | 三水的博客</title>
+  <meta name="description" content="剑指 Offer 31. 栈的压入、弹出序列1234567891011121314151617class Solution &amp;#123;    public boolean validateStackSequences(int[] pushed, int[] popped) &amp;#123;        Stack&lt;Integer&gt; stack &#x3D; new Stack&lt;&gt;()">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode20210707">
-<meta property="og:url" content="https://www.three-water.icu/2021/07/07/LeetCode20210707/index.html">
+<meta property="og:title" content="LeetCode20210709">
+<meta property="og:url" content="https://www.three-water.icu/2021/07/09/LeetCode20210709/index.html">
 <meta property="og:site_name" content="three-water666">
-<meta property="og:description" content="1">
+<meta property="og:description" content="剑指 Offer 31. 栈的压入、弹出序列1234567891011121314151617class Solution &amp;#123;    public boolean validateStackSequences(int[] pushed, int[] popped) &amp;#123;        Stack&lt;Integer&gt; stack &#x3D; new Stack&lt;&gt;()">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-07-07T15:23:05.000Z">
-<meta property="article:modified_time" content="2021-07-07T15:35:49.466Z">
+<meta property="article:published_time" content="2021-07-09T12:59:22.000Z">
+<meta property="article:modified_time" content="2021-07-09T13:13:08.209Z">
 <meta property="article:author" content="three-water">
 <meta property="article:tag" content="LeetCode">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://www.three-water.icu/2021/07/07/LeetCode20210707/index.html">
+  <link rel="canonical" href="https://www.three-water.icu/2021/07/09/LeetCode20210709/index.html">
   
     <link rel="alternate" href="/atom.xml" title="three-water666" type="application/atom+xml">
   
@@ -260,10 +260,10 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2021/07/07/LeetCode20210707/" class="title">LeetCode20210707</a>
+                <a href="/2021/07/09/LeetCode20210709/" class="title">LeetCode20210709</a>
               </p>
               <p class="item-date">
-                <time datetime="2021-07-07T15:23:05.000Z" itemprop="datePublished">2021-07-07</time>
+                <time datetime="2021-07-09T12:59:22.000Z" itemprop="datePublished">2021-07-09</time>
               </p>
             </div>
           </li>
@@ -341,14 +341,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-LeetCode20210707" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-LeetCode20210709" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      LeetCode20210707
+      LeetCode20210709
     </h1>
   
 
@@ -356,8 +356,8 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2021/07/07/LeetCode20210707/" class="article-date">
-	  <time datetime="2021-07-07T15:23:05.000Z" itemprop="datePublished">2021-07-07</time>
+	<a href="/2021/07/09/LeetCode20210709/" class="article-date">
+	  <time datetime="2021-07-09T12:59:22.000Z" itemprop="datePublished">2021-07-09</time>
 	</a>
 </span>
         
@@ -370,13 +370,14 @@
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/07/07/LeetCode20210707/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/07/09/LeetCode20210709/#comments" class="article-comment-link">Comments</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h3 id=""><a href="#" class="headerlink" title=""></a></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+        <h3 id="剑指-Offer-31-栈的压入、弹出序列"><a href="#剑指-Offer-31-栈的压入、弹出序列" class="headerlink" title="剑指 Offer 31. 栈的压入、弹出序列"></a>剑指 Offer 31. 栈的压入、弹出序列</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">validateStackSequences</span><span class="params">(<span class="keyword">int</span>[] pushed, <span class="keyword">int</span>[] popped)</span> </span>&#123;</span><br><span class="line">        Stack&lt;Integer&gt; stack = <span class="keyword">new</span> Stack&lt;&gt;();</span><br><span class="line">        <span class="keyword">int</span> i=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> num:pushed)</span><br><span class="line">        &#123;</span><br><span class="line">            stack.push(num);</span><br><span class="line">            <span class="keyword">while</span>(!stack.isEmpty()&amp;&amp;stack.peek()==popped[i])</span><br><span class="line">            &#123;</span><br><span class="line">                stack.pop();</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> stack.isEmpty();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="剑指-Offer-38-字符串的排列"><a href="#剑指-Offer-38-字符串的排列" class="headerlink" title="剑指 Offer 38. 字符串的排列"></a>剑指 Offer 38. 字符串的排列</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    List&lt;String&gt; res = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">    <span class="keyword">char</span>[] c;</span><br><span class="line">    <span class="keyword">public</span> String[] permutation(String s) &#123;</span><br><span class="line">        c=s.toCharArray();</span><br><span class="line">        dfs(<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">return</span> res.toArray(<span class="keyword">new</span> String[res.size()]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(x==c.length-<span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            res.add(String.valueOf(c));</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        HashSet&lt;Character&gt; set = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=x;i&lt;c.length;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(set.contains(c[i]))</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            set.add(c[i]);</span><br><span class="line">            swap(i,x);</span><br><span class="line">            dfs(x+<span class="number">1</span>);</span><br><span class="line">            swap(i,x);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">char</span> tmp=c[a];</span><br><span class="line">        c[a]=c[b];</span><br><span class="line">        c[b]=tmp;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <div class="article-footer">
@@ -385,7 +386,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://www.three-water.icu/2021/07/07/LeetCode20210707/" title="LeetCode20210707" target="_blank" rel="external">https://www.three-water.icu/2021/07/07/LeetCode20210707/</a>
+      <a href="https://www.three-water.icu/2021/07/09/LeetCode20210709/" title="LeetCode20210709" target="_blank" rel="external">https://www.three-water.icu/2021/07/09/LeetCode20210709/</a>
     </li>
     
     <li class="post-copyright-license">
