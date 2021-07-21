@@ -17,21 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>LeetCode20210713 | 三水的博客</title>
-  <meta name="description" content="剑指 Offer 44. 数字序列中某一位的数字12345678910111213141516class Solution &amp;#123;    public int findNthDigit(int n) &amp;#123;        int digit&#x3D;1;        long start&#x3D;1;        long count&#x3D;9;        while(n&gt;count)">
+  <title>LeetCode20210721 | 三水的博客</title>
+  <meta name="description" content="3. 无重复字符的最长子串12345678910111213141516171819class Solution &amp;#123;    public int lengthOfLongestSubstring(String s) &amp;#123;        Set&lt;Character&gt; occ&#x3D;new HashSet&lt;Character&gt;();        int len&#x3D;s">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode20210713">
-<meta property="og:url" content="https://www.three-water.icu/2021/07/13/LeetCode20210713/index.html">
+<meta property="og:title" content="LeetCode20210721">
+<meta property="og:url" content="https://www.three-water.icu/2021/07/21/LeetCode20210721/index.html">
 <meta property="og:site_name" content="three-water666">
-<meta property="og:description" content="剑指 Offer 44. 数字序列中某一位的数字12345678910111213141516class Solution &amp;#123;    public int findNthDigit(int n) &amp;#123;        int digit&#x3D;1;        long start&#x3D;1;        long count&#x3D;9;        while(n&gt;count)">
+<meta property="og:description" content="3. 无重复字符的最长子串12345678910111213141516171819class Solution &amp;#123;    public int lengthOfLongestSubstring(String s) &amp;#123;        Set&lt;Character&gt; occ&#x3D;new HashSet&lt;Character&gt;();        int len&#x3D;s">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-07-13T15:39:46.000Z">
-<meta property="article:modified_time" content="2021-07-13T15:40:17.695Z">
+<meta property="article:published_time" content="2021-07-21T12:02:37.000Z">
+<meta property="article:modified_time" content="2021-07-21T12:26:31.528Z">
 <meta property="article:author" content="three-water">
 <meta property="article:tag" content="LeetCode">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://www.three-water.icu/2021/07/13/LeetCode20210713/index.html">
+  <link rel="canonical" href="https://www.three-water.icu/2021/07/21/LeetCode20210721/index.html">
   
     <link rel="alternate" href="/atom.xml" title="three-water666" type="application/atom+xml">
   
@@ -341,14 +341,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-LeetCode20210713" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-LeetCode20210721" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      LeetCode20210713
+      LeetCode20210721
     </h1>
   
 
@@ -356,8 +356,8 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2021/07/13/LeetCode20210713/" class="article-date">
-	  <time datetime="2021-07-13T15:39:46.000Z" itemprop="datePublished">2021-07-13</time>
+	<a href="/2021/07/21/LeetCode20210721/" class="article-date">
+	  <time datetime="2021-07-21T12:02:37.000Z" itemprop="datePublished">2021-07-21</time>
 	</a>
 </span>
         
@@ -370,13 +370,15 @@
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/07/13/LeetCode20210713/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/07/21/LeetCode20210721/#comments" class="article-comment-link">Comments</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h3 id="剑指-Offer-44-数字序列中某一位的数字"><a href="#剑指-Offer-44-数字序列中某一位的数字" class="headerlink" title="剑指 Offer 44. 数字序列中某一位的数字"></a>剑指 Offer 44. 数字序列中某一位的数字</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findNthDigit</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> digit=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">long</span> start=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">long</span> count=<span class="number">9</span>;</span><br><span class="line">        <span class="keyword">while</span>(n&gt;count)</span><br><span class="line">        &#123;</span><br><span class="line">            n-=count;</span><br><span class="line">            digit+=<span class="number">1</span>;</span><br><span class="line">            start*=<span class="number">10</span>;</span><br><span class="line">            count=digit*start*<span class="number">9</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">long</span> num=start+(n-<span class="number">1</span>)/digit;</span><br><span class="line">        <span class="keyword">return</span> (<span class="keyword">int</span>)(Long.toString(num).charAt((n-<span class="number">1</span>)%digit)-<span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="3-无重复字符的最长子串"><a href="#3-无重复字符的最长子串" class="headerlink" title="3. 无重复字符的最长子串"></a>3. 无重复字符的最长子串</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        Set&lt;Character&gt; occ=<span class="keyword">new</span> HashSet&lt;Character&gt;();</span><br><span class="line">        <span class="keyword">int</span> len=s.length();</span><br><span class="line">        <span class="keyword">int</span> rk=-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i!=<span class="number">0</span>)&#123;</span><br><span class="line">                occ.remove(s.charAt(i-<span class="number">1</span>));</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">while</span>(rk+<span class="number">1</span>&lt;len&amp;&amp;!occ.contains(s.charAt(rk+<span class="number">1</span>)))&#123;</span><br><span class="line">                occ.add(s.charAt(rk+<span class="number">1</span>));</span><br><span class="line">                rk++;</span><br><span class="line">            &#125;</span><br><span class="line">            res=Math.max(res,rk-i+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="567-字符串的排列"><a href="#567-字符串的排列" class="headerlink" title="567. 字符串的排列"></a>567. 字符串的排列</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">checkInclusion</span><span class="params">(String s1, String s2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] cnt1=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="keyword">int</span>[] cnt2=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> len1=s1.length();</span><br><span class="line">        <span class="keyword">int</span> len2=s2.length();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(len1&gt;len2)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len1;i++)&#123;</span><br><span class="line">            cnt1[s1.charAt(i)-<span class="string">&#x27;a&#x27;</span>]++;</span><br><span class="line">            cnt2[s2.charAt(i)-<span class="string">&#x27;a&#x27;</span>]++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(Arrays.equals(cnt1,cnt2))&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=len1;i&lt;len2;i++)&#123;</span><br><span class="line">            cnt2[s2.charAt(i)-<span class="string">&#x27;a&#x27;</span>]++;</span><br><span class="line">            cnt2[s2.charAt(i-len1)-<span class="string">&#x27;a&#x27;</span>]--;</span><br><span class="line">            <span class="keyword">if</span>(Arrays.equals(cnt1,cnt2))&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     <div class="article-footer">
@@ -385,7 +387,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://www.three-water.icu/2021/07/13/LeetCode20210713/" title="LeetCode20210713" target="_blank" rel="external">https://www.three-water.icu/2021/07/13/LeetCode20210713/</a>
+      <a href="https://www.three-water.icu/2021/07/21/LeetCode20210721/" title="LeetCode20210721" target="_blank" rel="external">https://www.three-water.icu/2021/07/21/LeetCode20210721/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -431,13 +433,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2021/07/14/LeetCode20210714/" title="LeetCode20210714"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2021/07/12/LeetCode20210712/" title="LeetCode20210712"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2021/07/20/LeetCode20210720/" title="LeetCode20210720"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
